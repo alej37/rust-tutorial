@@ -24,6 +24,15 @@ fn main() {
     //  constants
     const SECONDS_IN_MINUTE: u32 = 60;
     println!("SECONDS: {}", SECONDS_IN_MINUTE);
+    
+    let tup:(i32, bool, char)= (1, true, 's');
+    // tuples are inmutable by default, although that can be change by adding the mut keyword
+    // check differece between char and &str, as it seems like type char is '' and &str is ""
+    println!("{}, {}, {}",tup.0, tup.1, tup.2);
+
+    let arr:[i32;4] = [1,2,3,4];
+    println!("{}", arr[0])
+    
 
 
 }
